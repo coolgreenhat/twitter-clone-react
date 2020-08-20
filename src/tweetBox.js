@@ -7,7 +7,7 @@ function TweetBox() {
         <div className="tweetBox">
             <form>
                 <div className="tweetBox__input">
-                    <Avatar src='./assets/avatar.png' />
+                    <Avatar src={require("./assets/avatar.png")} />
                     <input placeholder="What's happening ?" type="text"/>
                 </div>
                 <input 
