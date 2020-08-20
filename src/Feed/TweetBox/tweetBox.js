@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./TweetBox.css";
 import { Avatar, Button } from "@material-ui/core";
-import db from "./firebase"
+import db from "../../firebase"
 
 function TweetBox() {
     const [tweetMessage, setTweetMessage] = useState("");
@@ -27,7 +27,7 @@ function TweetBox() {
         <div className="tweetBox">
             <form>
                 <div className="tweetBox__input">
-                    <Avatar src={require("./assets/avatar.png")} />
+                    <Avatar src={"https://data.whicdn.com/images/120999916/original.png"} />
                     <input
                         onChange={(e) => setTweetMessage(e.target.value)}
                         value={tweetMessage}
